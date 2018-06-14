@@ -1,7 +1,6 @@
 FROM ruby:latest
 MAINTAINER stahnma@fedoraproject.org
 
-
 #RUN yum -y install ruby rubygems ruby-devel rubygem-nokogiri rubygem-bundler rubygem-json gcc make gcc-c++
 RUN gem install  --no-rdoc --no-ri sinatra thin shotgun nokogiri json bundler
 EXPOSE 8334
